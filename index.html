@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stilos/style.css">
+    <link rel="stylesheet" href="./stilos/table.css"  media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="./stilos/pc.css"  media="screen and (min-width: 1024px)">
+    <title>Herramienta Lecleire</title>
+</head>
+<body>
+ 
+<header></header>
+
+<section class="logo">
+    <picture><img src="./img/logo.png" alt="Logo"></picture>
+</section>
+
+
+
+<form name="registro" class="padre-formularios">
+
+    <div class="hijos_padre-formularios">
+<label>
+    <p class="titulo-formularios">INGRESAR CODIGO AQUI:</p>
+    <input type="number" name="texto" id="texto" placeholder="INGRESE EL CODIGO" class="input input1">
+    <input type="button" name="btn1" value="Buscar" onclick="mostrarDatos()" class="btn-buscar">
+</label>
+   </div>
+
+
+   <div class="hijos_padre-formularios">
+<label>
+    <p class="titulo-formularios">NOMBRE DEL PRODUCTO:</p>
+    <input type="text" name="nombreProducto" id="recibe" placeholder="NOMBRE DEL PRODUCTO" class="input" disabled>
+</label>
+  </div>
+
+
+  <div class="hijos_padre-formularios">
+<label>
+    <P class="titulo-formularios">PRECIO:</P>
+    <input type="text" name="precio" id="recibe2" placeholder="PRECIO" class="input" disabled>
+</label>
+  </div>
+
+
+  <div class="hijos_padre-formularios">
+<label>
+    <P class="titulo-formularios">TIPO DE PRODUCTO:</P>
+    <input type="text" name="tipoProducto" id="recibe3" placeholder="COLOR" class="input" disabled>
+</label>
+  </div>
+
+
+  <div class="hijos_padre-formularios">
+<label>
+    <P class="titulo-formularios">No. DE PAGINA:</P>
+    <input type="text" name="pagina" id="recibe4" placeholder="No. DE PAGINA" class="input" disabled>
+</label>
+  </div>
+
+</form>
+
+
+
+<section class="padre-imgs">
+
+<div class="padre-titulo_padre-imgs">
+    <h1>Imagen del producto:</h1>
+    <p>La imagen aparecera cuando ingreses el codigo del producto que buscas, cada imagen contiene en la parte inferior
+        el numero de pagina, es la misma imagen y numero de pagina que un catalago fisico por si en caso prefieres usar 
+        el catalogo de forma fisica.
+    </p>
+</div>
+
+<div class="primerPagina" id="primerPagina">
+    <img src="./img/primerPagina.PNG" alt="" class="imgFrompag">
+   </div>
+
+   <div class="segundaPagina" id="segundaPagina">
+    <img src="./img/segundaPagina.PNG" alt="" class="imgFrompag">
+   </div>
+   
+   <div class="tercerPagina" id="tercerPagina">
+    <img src="./img/tercerPagina.PNG" alt="" class="imgFrompag">
+   </div>
+
+    <div class="pag2y3" id="pag2y3">
+     <img src="./img/pagina2Y3.PNG" alt="" class="imgFrompag">
+    </div>
+    
+    <div class="pag4Y5" id="pag4Y5">
+        <img src="./img/pagina4Y5.PNG" alt="" class="imgFrompag">
+    </div>
+
+    
+    <div class="pag6y7" id="pag6y7">
+        <img src="./img/pagina6Y7.PNG" alt="" class="imgFrompag">
+    </div>
+
+    
+    <div class="pag8y9" id="pag8y9">
+        <img src="./img/paginas8Y9.PNG" alt="" class="imgFrompag">
+    </div>
+
+    
+    <div class="pag10y11" id="pag10y11"> 
+        <img src="./img/paginas10Y11.PNG" alt="" class="imgFrompag">
+    </div>
+
+    
+    <div class="pag12y13" id="pag12y13">
+        <img src="./img/paginas12Y13.PNG" alt="" class="imgFrompag">
+    </div>
+
+    
+    <div class="pag14y15" id="pag14y15">
+        <img src="./img/paginas14Y15.PNG" alt="" class="imgFrompag">
+    </div>
+
+    
+    <div class="pag16y17" id="pag16y17">
+        <img src="./img/paginas16Y17.PNG" alt="" class="imgFrompag">
+    </div>
+
+    
+    <div class="pag18y19" id="pag18y19">
+        <img src="./img/paginas18Y19.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag20y21" id="pag20y21">
+        <img src="./img/paginas20Y21.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag22Y23" id="pag22Y23">
+        <img src="./img/paginas22Y23.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag24y25" id="pag24y25">
+        <img src="./img/paginas24Y25.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag26y27" id="pag26y27">
+        <img src="./img/paginas26Y27.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag28y29" id="pag28y29">
+        <img src="./img/paginas28Y29.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag30y31" id="pag30y31">
+        <img src="./img/paginas30Y31.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag32y33" id="pag32y33">
+        <img src="./img/paginas32Y33.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag34y35" id="pag34y35">
+        <img src="./img/paginas34Y35.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag36y37" id="pag36y37">
+        <img src="./img/paginas36Y37.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag38y39" id="pag38y39">
+        <img src="./img/paginas38Y39.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag40y41" id="pag40y41">
+        <img src="./img/paginas40Y41.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag42y43" id="pag42y43">
+        <img src="./img/paginas42Y43.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag44y45" id="pag44y45">
+        <img src="./img/paginas44Y45.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag46y47" id="pag46y47">
+        <img src="./img/paginas46Y47.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag48y49" id="pag48y49">
+        <img src="./img/paginas48Y49.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag50y51" id="pag50y51">
+        <img src="./img/paginas50Y51.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag52y53" id="pag52y53">
+        <img src="./img/paginas52Y53.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag54y55" id="pag54y55">
+        <img src="./img/paginas54Y55.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag56y57" id="pag56y57">
+        <img src="./img/paginas56Y57.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag58y59" id="pag58y59">
+        <img src="./img/paginas58Y59.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag60y61" id="pag60y61">
+        <img src="./img/paginas60Y61.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag62y63" id="pag62y63">
+        <img src="./img/paginas62Y63.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag64y65" id="pag64y65">
+        <img src="./img/paginas64Y65.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag66y67" id="pag66y67">
+        <img src="./img/paginas66Y67.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag68y69" id="pag68y69">
+        <img src="./img/paginas68Y69.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag70y71" id="pag70y71">
+        <img src="./img/paginas70Y71.PNG" alt="" class="imgFrompag">
+    </div>
+    
+    <div class="pag72y73" id="pag72y73">
+        <img src="./img/paginas72Y73.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag74y75" id="pag74y75">
+        <img src="./img/paginas74Y75.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag76y77" id="pag76y77">
+        <img src="./img/paginas76Y77.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag78y79" id="pag78y79">
+        <img src="./img/paginas78Y79.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag80y81" id="pag80y81">
+        <img src="./img/paginas80Y81.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag82y83" id="pag82y83">
+        <img src="./img/paginas82Y83.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag84y85" id="pag84y85">
+        <img src="./img/paginas84Y85.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag86y87" id="pag86y87">
+        <img src="./img/paginas86Y87.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag88y89" id="pag88y89">
+        <img src="./img/paginas88Y89.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag90y91" id="pag90y91">
+        <img src="./img/paginas90Y91.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag92y93" id="pag92y93">
+        <img src="./img/paginas92Y93.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag94y95" id="pag94y95">
+        <img src="./img/paginas94Y95.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag96y97" id="pag96y97">
+        <img src="./img/paginas96y97.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag98y99" id="pag98y99">
+        <img src="./img/paginas98Y99.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag100y101" id="pag100y101">
+        <img src="./img/paginas100Y101.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag102y103" id="pag102y103">
+        <img src="./img/paginas102Y103.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag104y105" id="pag104y105">
+        <img src="./img/paginas104Y105.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag106y107" id="pag106y107">
+        <img src="./img/paginas106Y107.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag108y109" id="pag108y109">
+        <img src="./img/paginas108Y109.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag110y111" id="pag110y111">
+        <img src="./img/paginas110Y111.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag112y113" id="pag112y113">
+        <img src="./img/paginas112Y113.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag114y115" id="pag114y115">
+        <img src="./img/paginas114Y115.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag116y117" id="pag116y117">
+        <img src="./img/paginas116Y117.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag118y119" id="pag118y119">
+        <img src="./img/paginas118Y119.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag120y121" id="pag120y121">
+        <img src="./img/paginas120Y121.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag122y123" id="pag122y123">
+        <img src="./img/paginas122Y123.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag124y125" id="pag124y125">
+        <img src="./img/paginas124Y125.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag126y127" id="pag126y127">
+        <img src="./img/paginas126Y127.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag128y129" id="pag128y129">
+        <img src="./img/paginas128Y129.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag130y131" id="pag130y131">
+        <img src="./img/paginas130Y131.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag132y133" id="pag132y133">
+        <img src="./img/paginas132Y133.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag134y135" id="pag134y135">
+        <img src="./img/paginas134Y135.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag136y137" id="pag136y137">
+        <img src="./img/paginas136Y137.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag138y139" id="pag138y139">
+        <img src="./img/paginas138Y139.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag140y141" id="pag140y141">
+        <img src="./img/paginas140Y141.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag142y143" id="pag142y143">
+        <img src="./img/paginas142Y143.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag144y145" id="pag144y145">
+        <img src="./img/paginas144Y145.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag146y147" id="pag146y147">
+        <img src="./img/paginas146Y147.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag148y149" id="pag148y149">
+        <img src="./img/paginas148Y149.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag150y151" id="pag150y151">
+        <img src="./img/paginas150Y151.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag152y153" id="pag152y153">
+        <img src="./img/paginas152Y153.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag154y155" id="pag154y155">
+        <img src="./img/paginas154Y155.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag156y157" id="pag156y157">
+        <img src="./img/paginas156Y157.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag158y159" id="pag158y159">
+        <img src="./img/paginas158Y159.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag160y161" id="pag160y161">
+        <img src="./img/paginas160Y161.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag162y163" id="pag162y163">
+        <img src="./img/paginas162Y163.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag164y165" id="pag164y165">
+        <img src="./img/paginas164Y165.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag166y167" id="pag166y167">
+        <img src="./img/paginas166Y167.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag168y169" id="pag168y169">
+        <img src="./img/paginas168Y169.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag170y171" id="pag170y171">
+        <img src="./img/paginas170Y171.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag172y173" id="pag172y173">
+        <img src="./img/paginas172Y173.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag174y175" id="pag174y175">
+        <img src="./img/paginas174Y175.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag176y177" id="pag176y177">
+        <img src="./img/paginas176Y177.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag178y179" id="pag178y179">
+        <img src="./img/paginas178Y179.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag180y181" id="pag180y181">
+        <img src="./img/paginas180Y181.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag182y183" id="pag182y183">
+        <img src="./img/paginas182Y183.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag184y185" id="pag184y185">
+        <img src="./img/paginas184Y185.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag186y187" id="pag186y187">
+        <img src="./img/paginas186Y187.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag188y189" id="pag188y189">
+        <img src="./img/paginas188Y189.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag190y191" id="pag190y191">
+        <img src="./img/paginas190Y191.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag192y193" id="pag192y193">
+        <img src="./img/paginas192Y193.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag194y195" id="pag194y195">
+        <img src="./img/paginas194Y195.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag196y197" id="pag196y197">
+        <img src="./img/paginas196Y197.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag198y199" id="pag198y199">
+        <img src="./img/paginas198Y199.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag200y201" id="pag200y201">
+        <img src="./img/paginas200Y201.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag202y203" id="pag202y203">
+        <img src="./img/paginas202Y203.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag204y205" id="pag204y205">
+        <img src="./img/paginas204Y205.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag206y207" id="pag206y207">
+        <img src="./img/paginas206Y207.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag208y209" id="pag208y209">
+        <img src="./img/paginas208Y209.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag210y211" id="pag210y211">
+        <img src="./img/paginas210Y211.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag212" id="pag212">
+        <img src="./img/paginas212.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag213" id="pag213">
+        <img src="./img/paginas213.PNG" alt="" class="imgFrompag">
+    </div>
+
+    <div class="pag214" id="pag214">
+        <img src="./img/paginas214ultima.PNG" alt="" class="imgFrompag">
+    </div>
+
+</section>
+
+    <script src="./Script/java.js"></script>
+</body>
+</html>
