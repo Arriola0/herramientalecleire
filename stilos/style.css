@@ -10,8 +10,11 @@ html{
 .logo{
     width: 100%;
     height: 400px;
-    background-color: pink;
+    background-color: #ffa0bd;
     text-align: center;
+    animation-name: cambiocolor;
+    animation-duration: 6s;
+    animation-iteration-count: infinite; 
 }
 .logo img{
     width: 50%;
@@ -74,19 +77,7 @@ padding-right: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
-.primerPagina, .segundaPagina, .tercerPagina, .pag2y3, .pag4Y5, .pag6y7, .pag8y9, .pag10y11, .pag12y13, .pag14y15, .pag16y17, 
-.pag18y19, .pag20y21, .pag22Y23, 
-.pag24y25, .pag26y27, 
-.pag28y29, .pag30y31, .pag32y33, .pag34y35, .pag36y37, .pag38y39, .pag40y41, .pag42y43, .pag44y45, .pag46y47, .pag48y49,
-.pag50y51, .pag52y53, .pag54y55, .pag56y57, .pag58y59, .pag60y61, .pag62y63, .pag64y65, .pag66y67, .pag68y69, .pag70y71,
-.pag72y73, .pag74y75, .pag76y77, .pag78y79, .pag80y81, .pag82y83, .pag84y85, .pag86y87, .pag88y89, .pag90y91, .pag92y93,
-.pag94y95, .pag96y97, .pag98y99, .pag100y101, .pag102y103, .pag104y105, .pag106y107, .pag108y109, .pag110y111, .pag112y113,
-.pag114y115, .pag116y117, .pag118y119, .pag120y121, .pag122y123, .pag124y125, .pag126y127, .pag128y129, .pag130y131, .pag132y133,
-.pag134y135, .pag136y137, .pag138y139, .pag140y141, .pag142y143, .pag144y145, .pag146y147, .pag148y149, .pag150y151,
-.pag152y153, .pag154y155, .pag156y157, .pag158y159, .pag160y161, .pag162y163, .pag164y165, .pag166y167, .pag168y169,
-.pag170y171, .pag172y173, .pag174y175, .pag176y177, .pag178y179, .pag180y181, .pag182y183, .pag184y185, .pag186y187,
-.pag188y189, .pag190y191, .pag192y193, .pag194y195, .pag196y197, .pag198y199, .pag200y201, .pag202y203, .pag204y205,
-.pag206y207, .pag208y209, .pag210y211, .pag212, .pag213, .pag214{
+.img{
     width: 100%;
     margin-top: 50px;
     display: none;
@@ -96,3 +87,20 @@ padding-right: 10px;
 .imgFrompag{
 width: 90%;
 }
+
+
+@keyframes cambiocolor{
+    0%{
+        background-color: #ffa0bd;
+    }
+    60%{
+        background-color: #ff3190;
+    }
+}
+
+
+
+
+
+
+
