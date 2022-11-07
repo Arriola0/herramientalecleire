@@ -6,6 +6,23 @@
 html{
     font-size: 62.5%;
 }
+.camp-titulo{
+    width: 100px;
+    height: auto;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    border-radius: 0px 5px 5px 0px;
+}
+.num_capm-titulo{
+    padding: 3px;
+}
+.mes_capm-titulo{
+    background: #0000ff;
+    padding: 3px;
+    
+}
 
 .logo{
     width: 100%;
