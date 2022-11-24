@@ -1,4 +1,4 @@
-let publi = document.getElementById("div-publi");
+let publi = document.getElementById("publi");
 
 
 
