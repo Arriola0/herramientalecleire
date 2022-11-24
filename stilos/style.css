@@ -6,28 +6,55 @@
 html{
     font-size: 62.5%;
 }
-.camp-titulo{
+.campaña-titulo{
     width: 100px;
     height: auto;
     text-align: center;
     position: fixed;
-    top: 0;
+    top: 0px;
     background-color: #fff;
     border-radius: 0px 5px 5px 0px;
 }
-.num_capm-titulo{
+.num_campaña-titulo{
     padding: 3px;
 }
-.mes_capm-titulo{
-    background: #0000ff;
+.mes_campaña-titulo{
+    background: #F6332A;
     padding: 3px;
+    color: #fff;
     
 }
-
+.campaña-titulo-anterior{
+    width: 100px;
+    height: auto;
+    text-align: center;
+    position: fixed;
+    top: 35px;
+    background-color: #fff;
+    display: none;
+}
+.num_campaña-titulo-anterior{
+    padding: 3px;
+}
+.mes_campaña-titulo-anterior{
+    background-color: #1F37EB;
+    padding: 3px;
+}
+.a-campana-anterior{
+    color: #000;
+    text-decoration: none;
+}
+.direccional{
+    cursor: pointer;
+}
+.direccionalTwo{
+    display: none;
+    cursor: pointer;
+}
 .logo{
     width: 100%;
     height: 400px;
-    background-color: #ffa0bd;
+    background-color: #FC5C4C;
     text-align: center;
     animation-name: cambiocolor;
     animation-duration: 6s;
@@ -105,17 +132,99 @@ padding-right: 10px;
 width: 90%;
 }
 
+.publi{
+width: 60%;
+max-width: 400px;
+height: auto;
+max-height: 220px;
+min-height: 25px;
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+border: 1px solid black;
+padding-top: 5px;
+border-radius: 3px;
+overflow: hidden;
 
-@keyframes cambiocolor{
-    0%{
-        background-color: #ffa0bd;
-    }
-    60%{
-        background-color: #ff3190;
-    }
+}
+.contenedor-publi{
+    animation-name: transicionpublicidad;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.cerrar-publi{
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    margin-left: 90%;
+    padding: 3.2px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #D6D5D5;
+}
+.div-publi{
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.div-publi img{
+width: 100%;
+max-width: 190px;
+max-height: 160px;
+height: auto;
+border-radius: 3px;
+}
+
+.div-publi2{
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.div-publi2 img{
+    width: 100%;
+max-width: 190px;
+max-height: 160px;
+height: auto;
+border-radius: 3px;
 }
 
 
+
+
+
+
+
+
+
+@keyframes cambiocolor{
+    0%{
+        background-color: #FC5C4C;
+    }
+    60%{
+        background-color: #FC1E08;
+    }
+}
+
+@keyframes transicionpublicidad{
+    0%{
+        margin-top: 10px;
+        
+    }
+    70%{
+        margin-top: -200px;
+        
+    }
+    
+}
 
 
 

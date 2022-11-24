@@ -7,14 +7,34 @@
     <link rel="stylesheet" href="./stilos/style.css">
     <link rel="stylesheet" href="./stilos/table.css"  media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="./stilos/pc.css"  media="screen and (min-width: 1024px)">
-    <title>Herramienta Lecleire</title>
+    <title>Herramienta Lecleire Diciembre</title>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T4LSPH0H6E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T4LSPH0H6E');
+</script>
+
+
 </head>
 <body>
  
 <header>
-    <div class="camp-titulo">
-        <p class="num_capm-titulo">Campaña 2211</p>
-        <p class="mes_capm-titulo">NOVIEMBRE</p>
+    <div class="campaña-titulo">
+        <p class="num_campaña-titulo">Campaña 2212</p>
+        <p class="mes_campaña-titulo">DICIEMBRE 
+            <p onclick="mostrarCampana()" id="direccional" class="direccional"> &#9196</p> 
+            </p>
+    </div>
+    <a href="./noviembre/noviembre.html" class="a-campana-anterior">
+    <div class="campaña-titulo-anterior" id="mostrarCampanaAnterior">
+        <p class="num_campaña-titulo-anterior">Campaña 2212</p>
+        <p class="mes_campaña-titulo-anterior">NOVIEMBRE</p></a>
+        <p class="direccionalTwo" id="direccionalTwo" onclick="ocultarCampana()">&#9195</p>
     </div>
 </header>
 
@@ -51,7 +71,7 @@
   <div class="hijos_padre-formularios">
 <label>
     <P class="titulo-formularios">TIPO DE PRODUCTO: <span> &#128534; </span></P>
-    <input type="text" name="tipoProducto" id="recibe3" placeholder="COLOR" class="input" disabled>
+    <input type="text" name="tipoProducto" id="recibe3" placeholder="TIPO DE PRODUCTO" class="input" disabled>
 </label>
   </div>
 
@@ -66,13 +86,33 @@
 
 
 
+<section class="publi">
+    <span class="cerrar-publi" onclick="ocultarPublicidad()">X</span>
+
+<div class="contenedor-publi">
+
+<div class="div-publi" id="div-publi">
+    <img src="./img/publicholos.png" alt="">
+    <p>Anuncio valida para Quetzaltenango, Guatemala.</p>
+</div>
+
+<div class="div-publi2">
+    <img src="./img/anunciodos.jpg" alt="">
+    <p>Anuncio</p>
+</div>
+
+</div>
+</section>
+
+
+
 <section class="padre-imgs">
 
 <div class="padre-titulo_padre-imgs">
     <h1>Imagen del producto:</h1>
     <p>La imagen aparecera cuando ingreses el codigo del producto que buscas, cada imagen contiene en la parte inferior
-        el numero de pagina, es la misma imagen y numero de pagina que un catalago fisico por si en caso prefieres usar 
-        el catalogo de forma fisica.
+        el numero de pagina, es la misma imagen y numero de pagina, que un catalago fisico por si en algun caso prefieren usarlo 
+        que seria lo ideal.
     </p>
 </div>
 
@@ -117,7 +157,7 @@
 
     
     <div class="img" id="pag14y15">
-        <img src="./img/pag14y15 .jpg" alt="" class="imgFrompag">
+        <img src="./img/pag14y15.jpg" alt="" class="imgFrompag">
     </div>
 
     
@@ -515,7 +555,7 @@
     </div>
 
     <div class="img" id="pag212">
-        <img src="./img/pag210y211.jpg" alt="" class="imgFrompag">
+        <img src="./img/pag212.jpg" alt="" class="imgFrompag">
     </div>
 
     <div class="img" id="pag213">
@@ -531,6 +571,8 @@
 
 
 
-    <script src="./Script/java.js"></script>
+    <script src="./script/java.js"></script>
+    <script src="./script/publicidad.js"></script>    
+
 </body>
 </html>
